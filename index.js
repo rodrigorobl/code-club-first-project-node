@@ -1,8 +1,14 @@
+//import express from "express";
+//import { v4 } from "uuid";
+//import cors from 'cors'
+
 const express = require("express")
 const uuid = require('uuid')
-const port = 3000
+const cors = require('cors')
+const port = 3001
 const app = express()
 app.use(express.json())
+app.use(cors())
 /*
     - Query params => meusite.com/users?name=rodrigo&age=44 // FILTROS
     - Route params => /users/2 // BUSCAR, DELETAR OU ATUALIZAR ALGO ESPECIFICO
